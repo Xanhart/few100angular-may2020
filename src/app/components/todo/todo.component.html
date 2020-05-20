@@ -1,0 +1,12 @@
+<p>todo get back to kansas!</p>
+<div class="form-group">
+  <label for="item">Item</label>
+  <input class="form-control">
+  <button class="btn btn-success">Add Item</button>
+</div>
+<ul class="list-unstyled">
+  <li class="alert alert-info"
+      *ngFor="let item of items">
+    <span [ngClass]="{ completed: item.completed}">{{ item.description }}</span>
+  </li>
+</ul>
